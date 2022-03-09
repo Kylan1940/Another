@@ -1,0 +1,17 @@
+name: SpeedUI
+version: 1.0.0
+main: Kylan1940\SpeedUI\Main
+api: 4.0.0
+author: Kylan1940
+defend:
+- PurePerms
+
+commands:
+  speed:
+    description: "Set your speed level"
+    permission: "speedui.command"
+    
+permissions:
+  speedui.command:
+    description: "SpeedUI Permission"
+    default: op

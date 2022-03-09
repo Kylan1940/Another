@@ -1,0 +1,18 @@
+# Info:
+# You can use
+# § for colors
+# \n for new lines
+#
+# Message:
+only-ingame: "This command is only in game"
+deactive-message: "Speed is now deactive"
+speed-1-message: "Speed I is now active"
+speed-2-message: "Speed II is now active"
+speed-3-message: "Speed III is now active"
+#
+# UI
+title: "Speed"
+deactive-button: "Deactive"
+speed-1-button: "Speed I"
+speed-2-button: "Speed II"
+speed-3-button: "Speed III"
