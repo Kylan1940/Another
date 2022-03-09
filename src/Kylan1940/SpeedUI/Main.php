@@ -11,6 +11,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\ConsoleCommandSender;
 use pocketmine\utils\Config;
+use pocketmine\entity\Living;
 use Kylan1940\SpeedUI\Form\{Form, SimpleForm};
 
 class Main extends PluginBase implements Listener {
@@ -37,11 +38,11 @@ class Main extends PluginBase implements Listener {
             }
             switch ($result) {
                 case 0:
-                  $sender->setMovementSpeed($entity->getMovementSpeed()/(1+0.2*$instance->getEffectLevel()));
+                  $sender->setMovementSpeed($sender->getMovementSpeed()/(1+0.2*$instance->getEffectLevel()));
                   $sender->sendMessage($this->getConfig()->get("deactive-message"));
                   break;
                 case 1:
-                  $sender->setMovementSpeed($entity->getMovementSpeed()*(1+0.2*$instance->getEffectLevel()));
+                  $sender->setMovementSpeed($sender->getMovementSpeed()*(1+0.2*$instance->getEffectLevel()));
                   $sender->sendMessage($this->getConfig()->get("speed-1-message"));
                   break;
                 case 2:
